@@ -32,10 +32,29 @@ else:
 
 #since rain = true, it prints to bring the umbrella
 
-age = 66
+""" age = 66
 if age > 65:
     print("Senior Citizen")
 elif age > 18:
     print("Adult")
 else:
     print("Child")
+ """
+#since i set the age as 66 in the beginning, it prints senior citizen because 66>65. It did not print adult because i put that it should print senior citizen if it is greater then 65 above the elif where it says if it is greater then 18 it should print adult. if i put  30, it woild print adult and if i set age as 10 it would print child
+
+""" #integer
+x = 7
+
+#float
+y = 3.14
+
+#Boolean
+z = True
+
+#string
+name = "Steve" """
+
+#lists
+students = ["Natalie," "Martin," "Ben," "Stefania"]
+#students.append("Karas")
+print(students.pop(0), students)
