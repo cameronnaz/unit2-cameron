@@ -9,10 +9,10 @@ for i in values:
     print(i)
  """
 
-bill = input("How much is the bill?")
+""" bill = float(input("How much is the bill?"))
 service = input("how good was the service (bad okay good great)")
 if service == "bad":
-    bill = (bill * 0)
+    bill = (bill + 0)
     print(f"Your total is {bill}")
 elif service == "okay":
     bill = (bill * 1.15)
@@ -23,12 +23,21 @@ elif service == "good":
 elif service == "great":
     bill = (bill * 1.25)
     print(f"Your total is {bill}")
-
+ """
 
 
 """ def calculator():
     bill = float(input("How much was the bill?"))
     tip = float(input("How much would you like to tip? (0, 0.10, 0.20, 0.25)"))
     total = bill * (1 + tip)
-    print(total)
-calculator() """
+    print(f"Your total is {total}")
+calculator()
+ """
+
+def oddoreven():
+    number = int(input("what is your number"))
+    if number % 2 == 0:
+        print(f"Your number {number} is even")
+    else:
+        print(f"Your number {number} is odd")
+oddoreven()
