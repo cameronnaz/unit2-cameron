@@ -34,10 +34,28 @@ elif service == "great":
 calculator()
  """
 
-def oddoreven():
+""" def oddoreven():
     number = int(input("what is your number"))
     if number % 2 == 0:
         print(f"Your number {number} is even")
     else:
         print(f"Your number {number} is odd")
 oddoreven()
+ """
+
+""" def factors():
+    factors = []
+    number = int(input("What is your number"))
+    for i in range(1, number+1):
+        if number % i == 0:
+            factors.append(i)
+    print(factors)
+factors() """
+
+
+def sentences():
+    sentence = (input("What is your sentence"))
+    wordcount = sentence.split()
+    wordsnumber = len(wordcount)
+    print("There are " + str(wordsnumber) + "words in your sentence")
+sentences()
