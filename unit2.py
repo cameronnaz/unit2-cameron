@@ -53,9 +53,22 @@ oddoreven()
 factors() """
 
 
-def sentences():
+""" def sentences():
     sentence = (input("What is your sentence"))
     wordcount = sentence.split()
     wordsnumber = len(wordcount)
     print("There are " + str(wordsnumber) + "words in your sentence")
-sentences()
+sentences() """
+
+def gcf():
+    factorlist =[]
+    number = int(input("What are your two numbers"))
+    nuber = int(input("What are your two numbers"))
+    for i in range (1, number+1):
+        if number % i == 0 and nuber % i == 0:
+            factorlist.append(i)
+    print(factorlist)
+    print(factorlist[-1])
+gcf()
+
+
