@@ -10,24 +10,26 @@
 spaces() """
 
 
-def englishfrench():
-    sentence = str(input("What is your sentence"))
-    engfrench = str(sentence.split)
-    typeofletter = len(engfrench)
-    engcount = 0
-    frecount = 0
-    for i in range ():
-        if engfrench[i] == "s" or "S":
-            engcount +=1
-    for i in range ():
-        if engfrench[i] == "t" or "T":
-            frecount +=1
-    if engfrench == "t" or "T" > "s" or "S":
-        print("Your sentence is english")
-    if engfrench == "s" or "S" > "t" or "T":
-        print("Your sentence is french")
-englishfrench()
+
+# def wizards(N,start,duels):
+#     owner = start
+#     changedhands = 1
+#     print(duels[0][1])
+#     if duels[0][1] == owner:
+#         owner = duels[0][0]
+#         changedhands +=1
+#     print(owner)
+# wizards(3, "A", ["BA", "CB", "DA"])
 
 
 
-#Lorsque j avais six ans jai vu, une fois, une magnifique image, dans un livre
+def wizards(N,start,duels):
+    owner = start
+    changedhands = 1
+    print(duels[N][0])
+    if duels[N][0] == owner:
+        owner = duels[N][0]
+        changedhands +=1
+    print(owner)
+wizards(3, "A", ["BA", "CB", "DA"])
+
