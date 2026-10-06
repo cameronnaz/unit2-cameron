@@ -25,11 +25,12 @@ spaces() """
 
 def wizards(N,start,duels):
     owner = start
-    changedhands = 1
-    print(duels[N][0])
-    if duels[N][0] == owner:
-        owner = duels[N][0]
-        changedhands +=1
-    print(owner)
+    numowners = 1
+    for i in range(N):
+        if duels[i][1] == owner:
+            owner = duels[i][0]
+            numowners +=1
+        print(owner, numowners)
+    
 wizards(3, "A", ["BA", "CB", "DA"])
 
