@@ -22,7 +22,7 @@ spaces() """
 # wizards(3, "A", ["BA", "CB", "DA"])
 
 
-
+""" 
 def wizards(N,start,duels):
     owner = start
     numowners = 1
@@ -32,5 +32,29 @@ def wizards(N,start,duels):
             numowners +=1
         print(owner, numowners)
     
-wizards(3, "A", ["BA", "CB", "DA"])
+wizards(3, "A", ["BA", "CB", "DA"]) """
+
+
+def engorfrench():
+    sentence = (input("What is your sentence"))
+    engcount = 0
+    sentence.count
+    if "s" or "S":
+        engcount +=1
+    frenchcount = 0
+    if "t" or "T":
+        frenchcount +=1
+    if engcount > frenchcount:
+        print("Your sentence is english")
+    if frenchcount > engcount:
+        print("Your sentence is french.")
+engorfrench()
+        
+
+    
+
+
+
+
+
 
