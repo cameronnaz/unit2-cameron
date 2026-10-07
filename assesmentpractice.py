@@ -35,21 +35,37 @@ def wizards(N,start,duels):
 wizards(3, "A", ["BA", "CB", "DA"]) """
 
 
-def engorfrench():
-    sentence = (input("What is your sentence"))
+""" def engorfrench():
+    sentence = str(input("What is your sentence"))
     engcount = 0
-    sentence.count
-    if "s" or "S":
-        engcount +=1
     frenchcount = 0
-    if "t" or "T":
-        frenchcount +=1
+    for i in sentence:
+        if i.lower() == "s":
+            engcount +=1 
+        elif i.lower() == "t":
+            frenchcount +=1
+        elif engcount == frenchcount:
+            print ("this sentence is probably french")
     if engcount > frenchcount:
         print("Your sentence is english")
     if frenchcount > engcount:
         print("Your sentence is french.")
 engorfrench()
-        
+         """
+
+
+def epidemic(P, start, infected):
+    firstzombie = start
+    daycount = 0
+    numboofinf = infected - start
+    infected = start * numboofinf
+    while infected < P:
+        infected * numboofinf
+    if infected < P:
+        daycount +=1
+    print(daycount)
+epidemic(750, 1, 5)
+
 
     
 
