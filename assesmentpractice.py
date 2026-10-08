@@ -54,18 +54,26 @@ engorfrench()
          """
 
 
-def epidemic(P, start, infected):
-    firstzombie = start
+""" def epidemic(P, start, infected):
+    today = start
+    total = start
     daycount = 0
-    numboofinf = infected - start
-    infected = start * numboofinf
-    while infected < P:
-        infected * numboofinf
-    if infected < P:
+    while total <= P:
+        today *= infected
+        total += today
         daycount +=1
     print(daycount)
-epidemic(750, 1, 5)
+epidemic(750, 1, 5) """
 
+def wizardbattle(N , start, duels):
+    owner = start
+    numbofowners = 1
+    for i in range(N):
+        if duels[i][1] == owner:
+            owner = duels[i][0]
+            numbofowners +=1
+    print(owner, numbofowners)
+wizardbattle(3, "E", ["BA","CB", "DA"])
 
     
 
@@ -74,3 +82,16 @@ epidemic(750, 1, 5)
 
 
 
+
+
+
+
+def wizards(N, start, duels):
+    owner = start
+    numbofowners = 0
+    for i in range(N):
+        if duels [i][1] == owner:
+            owner = duels [i][0]
+            numbofowners +=1
+    print(owner, numbofowners)
+wizards(6, "A", ["BA", "BC", "DB", "ED", "EF", "GE"])
